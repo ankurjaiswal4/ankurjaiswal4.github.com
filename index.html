@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ankur's Portfolio</title>
+
+    <!--
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--
+    - #MAIN
+  -->
+
+    <main>
+      <!--
+      - #SIDEBAR
+    -->
+
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/my-avatar.png"
+              alt="Ankur Jaiswal"
+              width="80"
+            />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Ankur Jaiswal">Ankur Jaiswal</h1>
+
+            <p class="title">Frontend developer</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a href="mailto:ankurjaiswal@outlook.in" class="contact-link"
+                  >ankurjaiswal@outlook.in</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
+
+                <time datetime="1982-06-23">Sep 05, 1993</time>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+
+                <address>Bengaluru, India</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!--
+      - #main-content
+    -->
+
+      <div class="main-content">
+        <!--
+        - #NAVBAR
+      -->
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!--
+        - #ABOUT
+      -->
+
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              IT Professional with 8 years of experience specialising in UI
+              development & mobile development.
+            </p>
+            <p>
+              Experience working with HTML, CSS, Javascript, React JS, React
+              Native, Vue JS and all versions of Angular (including Angular JS
+              1). Also have hands on experience working with Node JS, Core Java,
+              MongoDB, SQL & various other tech. I am very much interested in
+              learning new stuff, trying new technologies and learning something
+              everyday.
+            </p>
+
+            <p>
+              My job is to build dashboard, portals, lobby that it is
+              functional, modular and user-friendly but at the same time
+              attractive.
+            </p>
+          </section>
+
+          <!--
+          - service
+        -->
+
+          <section class="service">
+            <h3 class="h3 service-title">What i'm doing</h3>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt="Web development icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web development</h4>
+
+                  <p class="service-item-text">
+                    High-quality development of sites, portals, dashboards with
+                    reusable components at the professional level.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-app.svg"
+                    alt="mobile app icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                  <p class="service-item-text">
+                    Professional development of applications for iOS and Android
+                    using React Native.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!--
+          - tech stacks
+        -->
+
+          <section class="tech">
+            <h3 class="h3 tech-title">Tech Stack</h3>
+
+            <ul class="tech-list has-scrollbar">
+              <li class="tech-item">
+                <ion-icon name="logo-javascript"></ion-icon>
+              </li>
+
+              <li class="tech-item">
+                <ion-icon name="logo-angular"></ion-icon>
+              </li>
+
+              <li class="tech-item">
+                <ion-icon name="logo-react"></ion-icon>
+              </li>
+
+              <li class="tech-item">
+                <ion-icon name="logo-html5"></ion-icon>
+              </li>
+
+              <li class="tech-item">
+                <ion-icon name="logo-css3"></ion-icon>
+              </li>
+
+              <li class="tech-item">
+                <ion-icon name="logo-sass"></ion-icon>
+              </li>
+
+              <li class="tech-item">
+                <ion-icon name="logo-wordpress"></ion-icon>
+              </li>
+
+              <li class="tech-item">
+                <ion-icon name="logo-npm"></ion-icon>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #RESUME
+      -->
+
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Education</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Ganeshi Lal Bajaj Institute of Technology, Greater Noida
+                </h4>
+
+                <span>2011 - 2015</span>
+
+                <p class="timeline-text">
+                  Bachelors of Technology, Computer Science Engineering
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Army School, Kanpur, UP</h4>
+
+                <span>2010 - 2011</span>
+
+                <p class="timeline-text">12th, CBSE, Computer Science</p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">OEF, Kanpur, UP</h4>
+
+                <span>2008 — 2009</span>
+
+                <p class="timeline-text">10th, CBSE, Science</p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Experience</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Games24x7</h4>
+
+                <span>May 2022 — Present</span>
+
+                <p class="timeline-text">
+                  Worked on building portals using react js. Written node js
+                  apis to act as proxy for BE. Onboarded new games, created
+                  pages to manage games and related tournaments. Created React
+                  native lobby for new initiative, which had tabs, lists,
+                  modals, reusable components
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Ola</h4>
+
+                <span>Dec 2021 — May 2022</span>
+
+                <p class="timeline-text">
+                  Worked on few projects build using Vue JS, Nuxt, Angular, Node
+                  JS developing few new features, migrating some features,
+                  fixing existing issues and building an apps from scratch.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Cisco</h4>
+
+                <span>Feb 2020 — Dec 2021</span>
+
+                <p class="timeline-text">
+                  Worked on various cloud projects with different teams in short
+                  time. My role required me to work with Angular, React,
+                  Chartjs, D3, NodeJs, Java, Spring, Golang, Postgres SQL,
+                  Docker, AWS SNS, AWS SQS, Git and few other tech.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Cientra</h4>
+
+                <span>July 2017 - Jan 2020</span>
+
+                <p class="timeline-text">
+                  Worked on a product LUCY build using Angular JS, Highcharts
+                  and also migrated the application to Angular 7. Lucy is a very
+                  big marketing application which used IBM Watson and machine
+                  learning to do market analysis and display the results
+                  graphically in the UI.
+                  <br /><br />
+                  Also worked on ReactJS Application, building components and
+                  pages, used React hooks to build functional components along
+                  with JSX, styling with CSS. Also worked on backend API written
+                  in Java and Node Js and used maintaining code using Git and
+                  tracking ticket using JIRA. Worked on IOT application using
+                  Angular 7 and Angular Material, building the app from scratch,
+                  implementing Authentication using Azure AD, Interceptors,
+                  Guards, i18n (internationalization), utilizing RESTful
+                  services
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Virtusa Polaris</h4>
+
+                <span>June 2015 - July 2017</span>
+
+                <p class="timeline-text">
+                  Started my career with Virtusa, worked on various technologies
+                  and worked on critical production application ARTISAN, build
+                  new functionality using HTML, CSS, Javascript and handled the
+                  production Database. Along with that, worked on ticket
+                  management system BRIDGE which was build using JSP and handled
+                  the deployment to Websphere Server and Unix Server. Also
+                  worked in Angular JS application which was asset management
+                  app.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="skill">
+            <h3 class="h3 skills-title">My skills</h3>
+
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">React Native</h5>
+                  <data value="60">60%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 60%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">React JS</h5>
+                  <data value="80">80%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Angular(1-9)</h5>
+                  <data value="85">85%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 85%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Vue Js</h5>
+                  <data value="40">40%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 40%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">HTML</h5>
+                  <data value="80">80%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">CSS</h5>
+                  <data value="80">80%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Javascript</h5>
+                  <data value="80">80%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Bootstrap</h5>
+                  <data value="70">70%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Node JS</h5>
+                  <data value="50">50%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 50%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Core Java</h5>
+                  <data value="50">50%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 50%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">SQL</h5>
+                  <data value="70">70%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Git/SVN</h5>
+                  <data value="80">80%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">AWS</h5>
+                  <data value="30">30%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 30%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Flutter</h5>
+                  <data value="30">30%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 30%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!--
+          - certifications
+        -->
+          <br />
+          <section class="timeline">
+            <h3 class="h3 service-title">Certifications</h3>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <span>Qualified C/C++ Olympiad - 2011 </span>
+              </li>
+              <li class="timeline-item">
+                <span
+                  >Loophole + Ethical Hacking Workshop - Kyrion Digital - 2012
+                </span>
+              </li>
+              <li class="timeline-item">
+                <span>MongoDB for Java Developers Certification - 2014 </span>
+              </li>
+            </ol>
+          </section>
+        </article>
+
+        <!--
+        - #CONTACT
+        -->
+
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
+
+            <form action="#" class="form" data-form>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
+
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
+
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
+
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <!--
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
