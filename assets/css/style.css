@@ -562,7 +562,8 @@ main {
   align-items: flex-start;
   gap: 25px;
   margin: 0 -15px;
-  padding: 45px;
+  padding: 25px;
+  padding-left: 10px;
   padding-bottom: 25px;
   overflow-x: auto;
   scroll-behavior: smooth;
@@ -577,20 +578,29 @@ main {
 }
 
 .tech-item img {
-  width: 100%;
+  width: 8vh;
   filter: grayscale(1);
   transition: var(--transition-1);
+  margin: auto;
 }
 
 .tech-item ion-icon {
   color: azure;
   width: 8vh;
   height: 8vh;
+  margin: auto;
   filter: grayscale(0);
   transition: var(--transition-1);
 }
 
 .tech-item ion-icon:hover { filter: grayscale(1); }
+
+.tech-item-title {
+  color:hsl(0, 0%, 100%);
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
 
 
 
@@ -888,8 +898,8 @@ main {
 
   .tech-list {
     gap: 20px;
-    margin: 0 -15px;
-    padding: 40px;
+    margin: 0 -10px;
+    padding: 40px 10px;
     scroll-padding-inline: 45px;
   }
 
