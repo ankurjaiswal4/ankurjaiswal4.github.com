@@ -585,7 +585,7 @@ main {
 }
 
 .tech-item ion-icon {
-  color: azure;
+  color: white;
   width: 8vh;
   height: 8vh;
   margin: auto;
@@ -737,6 +737,8 @@ main {
 
   .project-img,
   .blog-banner-box { height: auto; }
+
+  .has-scrollbar::-webkit-scrollbar-button { width: 100px; }
 
 }
 
